@@ -14,6 +14,9 @@ ELSE{
 digitalWrite(13,LOW);
 }
 temperature
+LED-cathode(gnd),anode-13
+tmp:-left-5v,middle-a0,right-gnd
+
 
 
 /////////////////////////
