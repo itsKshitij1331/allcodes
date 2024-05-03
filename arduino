@@ -1,0 +1,73 @@
+void setup()
+{
+Serial.begin(9600);
+pinMode(LED_BULTIN,OUTPUT);
+}
+void loop()
+{
+Serial.println(analogRead(A0));
+if(analogRead(A0)>100)
+{
+digitalWrite(13,HIGH);
+}
+ELSE{
+digitalWrite(13,LOW);
+}
+temperature
+
+
+/////////////////////////
+void setup()
+{
+pinMode(13,OUTPUT);
+pinMode(3,INPUT);
+}
+void loop()
+{
+if(digitalRead(3)==1)
+{
+digitalWrite(13,HIGH);
+}
+else{
+digitalWrite(13,LOW);
+}
+}
+switch slider
+/////////////////////////////
+const int gas=A0;
+const int LED=13;
+void setup()
+{
+  pinMode(gas,INPUT);
+  pinMode(LED,OUTPUT);
+}
+ void loop()
+ {
+   if(analogRead(A0)>250)
+   {
+     digitalWrite(13,HIGH);
+     delay(10);
+   }
+   else{
+     digitalWrite(13,LOW);
+     delay(10);
+   }
+ }
+
+or//
+void setup()
+{
+Serial.begin(9600);
+pinMode(LED_BULTIN,OUTPUT);
+}
+void loop()
+{
+Serial.println(analogRead(A0));
+if(analogRead(A0))>101)
+{
+digitalWrite(LED_BUILTIN,HIGH);
+}
+else{
+digitalWrite(ledbuiltin,low);
+}
+
